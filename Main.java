@@ -6,13 +6,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
-       // System.out.print(in.nextLine());
-        System.out.println("Write the line as binary number");
-        String LineBin = in.nextLine();
-        int LineDex = Integer.parseInt(LineBin, 2);
-        System.out.println(LineDex);
-    }
+Scanner in = new Scanner(System.in);
+System.out.println("Write binary number as 8 elements ");
+int MyArr[] = new int [8];
+for (int i=0; i < MyArr.length; i++) {
+    MyArr[i] = in.nextInt();
+}
+if (MyArr[0]>0)
+    MyArr[0] = 0;
+    else MyArr[0] = 1;
+
+
+System.out.println("MyArray");
+for (int i=0; i<MyArr.length; i++) {
+    System.out.print(MyArr[i] + "");
+}
+System.out.println();
 }
 
-
+    }
