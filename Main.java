@@ -16,7 +16,7 @@ if (MyArr[0]>0)
     MyArr[0] = 0;
     else MyArr[0] = 1;
 
-
+//еупциціьиаьіаифам //
 System.out.println("MyArray");
 for (int i=0; i<MyArr.length; i++) {
     System.out.print(MyArr[i] + "");
